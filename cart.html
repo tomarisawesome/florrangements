@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- NAV BAR -->
+<ul id="nav">
+  <li class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="logo" style="width:90px; border-radius:50%;">
+    </a>
+  </li>
+
+  <li class="dropdown-parent">
+    <a href="#">BOUQUETS</a>
+    <ul class="dropdown">
+      <li><a href="ourbouquets.html">OUR BOUQUETS</a></li>
+      <li><a href="yourbouquets.html">YOUR BOUQUETS</a></li>
+    </ul>
+  </li>
+
+  <li><a href="cart.html">CART</a></li>
+
+  <li class="dropdown-parent">
+    <a href="aboutus.html">ABOUT US</a>
+    <ul class="dropdown">
+      <li><a href="contact.html">CONTACT US</a></li>
+      <li><a href="reviews.html">REVIEWS</a></li>
+    </ul>
+  </li>
+</ul>
+
+  <!-- CONTENT -->
+  <div class="container">
+    <h1>Your Cart</h1>
+    <p class="subtitle">Thank you for shopping with us! Please review your selections and complete your purchase.</p>
+    <hr>
+
+    <div class="order-summary">
+      <strong>ORDER SUMMARY:</strong>
+      <ol>
+        <li>"Good Morning Sunshines" Bouquet – <strong>1 × $50.00</strong></li>
+        <li>"Happy Birthday Mari" Custom Bouquet – <strong>1 × $50.00</strong></li>
+      </ol>
+      <p><strong>TOTAL: $100.00</strong></p>
+    </div>
+
+    <hr>
+
+    <div class="cart-grid">
+      <div class="cart-item">
+        <div class="delete">X DELETE</div>
+        <div class="cart-img"></div>
+        <h4 class="bouquet-name">Good Morning Sunshines</h4>
+        <div class="bouquet-price">1 × $50.00 = $50.00</div>
+      </div>
+
+      <div class="cart-item">
+        <div class="delete">X DELETE</div>
+        <div class="cart-img"></div>
+        <h4 class="bouquet-name">Happy Birthday Mari!</h4>
+        <div class="bouquet-price">1 × $50.00 = $50.00</div>
+      </div>
+
+      <div class="cart-item">
+        <div class="delete">X DELETE</div>
+        <div class="cart-img"></div>
+        <h4 class="bouquet-name">Good Morning Sunshines</h4>
+        <div class="bouquet-price">1 × $50.00 = $50.00</div>
+      </div>
+    </div>
+
+    <button class="checkout-btn">CHECKOUT</button>
+  </div>
+
+  <footer>
+  <p>Florrangements®</p>
+  <div class="footer-links">
+    <a href="aboutus.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</footer>
+
+</body>
+</html>
