@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>CSS Demo</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<style> 
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=DM+Sans:wght@400;500;700&display=swap');
+    label {
+        display: block; 
+        font-size: 20px;
+    }
+
+    #error {color: #C41E58;; padding-top: 3px; padding-bottom: 20px; font-size: 30px; font-weight: bold; display: flex; 
+        justify-content: center; 
+        align-items: center;  }
+    
+    input[type = "text"] { 
+        margin-top: 5px; 
+        height: 60px; 
+        width: 100%; 
+        max-width: 1330px;
+        border: 2px solid #C41E58; 
+        border-radius: 6px; 
+        font-size: 15px; 
+        box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.2)
+    }
+
+    input[type = "radio"]{
+        font-size: 15px;
+    }
+
+    select{
+        font-size: 15px;
+        border: 2px solid #C41E58; 
+        width: 270px; 
+        height: 50px; 
+        border-radius: 6px; 
+        box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.2)
+    }
+
+    ::placeholder{
+        font-style: italic; 
+        margin-left: 3px; 
+    }
+
+    .submit-button{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        background-color: #C41E58; 
+        margin: 30px auto;
+        border: 2px solid #C41E58; border-radius: 6px; width: 300px; 
+        height: 100px; 
+    }
+    .submit-button input{
+        color: #ffffff; 
+        font-weight: bold; 
+        font-size: 30px; 
+        font-family: 'DM Serif Text', serif;
+        background-color: transparent; 
+        border-color: transparent; 
+    }
+</style> 
+</head>
+
+<body>
+    <ul id="nav">
+        <li class="logo">
+        <a href="index.html">
+        <img src="images/logo.png" alt="logo" style="width:90px; border-radius:50%;">
+        </a>
+        </li>
+        
+        <li class="dropdown-parent">
+        <a href="#">BOUQUETS</a>
+        <ul class="dropdown">
+        <li><a href="ourbouquets.html">OUR BOUQUETS</a></li>
+        <li><a href="yourbouquets.html">YOUR BOUQUETS</a></li>
+        </ul>
+        </li>
+        
+        <li><a href="cart.html">CART</a></li>
+        
+        <li class="dropdown-parent">
+        <a href="aboutus.html">ABOUT US</a>
+        <ul class="dropdown">
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="reviews.html">REVIEWS</a></li>
+        </ul>
+        </li>
+        </ul>
+    
+        <div class="container">
+        <h1>Contact Us</h1>
+            <p>Explore our curated selection of bouquets</p>
+        <hr>
+
+            <script>
+                window.onload=function() 
+                {
+                    document.getElementById("Submit!").onclick= buttonClick;
+                }
+                // Function to validate that the user inputted the required fields 
+                function validate()  
+                {
+                    reqFields = ["the_name", "email", "message"]
+                    reqNames = ["Name", "Email","Message"]
+                    err = ""
+                    for (i=0;i<reqFields.length;i++)
+                    {
+                        if (document.getElementById(reqFields[i]).value =="")
+                            err += reqNames[i] + " is required<br/>";
+                    }
+                    if (err != "") 
+                    {
+                        document.getElementById('error').innerHTML =
+                                "Fix the following errors to continue:<br>" + err;
+                        return false;
+                    }
+                    return true;
+                }
+                function buttonClick()
+                {
+                    if (validate()) {
+                        const name = document.getElementById("the_name").value
+                        alert("Your response has been submitted"+ name + "!") 
+                    }
+                }
+            </script>
+    
+        <div style="text-align: left; font-size: 25px; font-weight: bold ">
+            <form onSubmit="return validate()" method='get' action='#'> <br /><br />
+
+                <!-- Text box: Required First and Last Names  -->
+                <label> *First & Last Name: </label> <input type="text" placeholder="  Add your name here..." name='name' id='the_name'> <br /><br />
+
+                <!-- Text box: Required Email  -->
+                <label>*Email: </label> <input type="text" placeholder="  Add your email here..." name='email' id='email'> <br /><br />
+                <!-- Text box: Non-requried phone number  -->
+                <label> Phone Number </label> <input type="text" placeholder="  Add your phone number here..." name='email' id='number'> <br /><br />
+
+                <!-- Non-required Radio buttons for purpose of their inquiry  -->
+                <label> Purpose of your inquiry: </label>
+            <label style="font-weight: 300;">
+                <input type="radio" name="purpose" value="Help with event" class="radio-purpose"> Help with event
+            </label> 
+            <label style="font-weight: 300;">
+                <input type="radio" name="purpose" value="Custom bouquet" class="radio-purpose"> Custom bouquet
+            </label>
+            <label style="font-weight: 300;">
+                <input type="radio" name="purpose" value="Website troubles" class="radio-purpose"> Website troubles
+            </label>
+            <label style="font-weight: 300;">
+                <input type="radio" name="purpose" value="Other" class="radio-purpose"> Other
+            </label>
+                <br />
+                
+                <!-- Non-required drop down list for their order status  -->
+                <label> Order Status (drop down list): </label>
+                    <select name="Orderstatus">
+                    <option value="purchased">I have already purchased a bouque</option>
+                    <option value="non-purchased">I am looking to purchase a bouque </option>
+                    </select>
+
+                <br /><br />
+                
+                <!-- Text box: Required Inquiry  -->
+                <label> *How can we help? </label> <input type="text" placeholder="  Add your message here..." name='message' id='message'>
+
+                <!-- Submit Form button  -->
+                <div class = "submit-button"> 
+                    <input type='submit' value="SEND MESSAGE" id="Submit!">
+                </div>
+                <!-- End of form  -->
+                </form>
+        </div>
+
+        <div id="error">&nbsp;</div>
+        </div>
+
+<footer>
+  <p>Florrangements®</p>
+  <div class="footer-links">
+    <a href="aboutus.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</footer>
+</body>
+</html>
