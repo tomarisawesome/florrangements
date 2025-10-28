@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Bouquets</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- NAV BAR -->
+<ul id="nav">
+  <li class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="logo" style="width:90px; border-radius:50%;">
+    </a>
+  </li>
+
+  <li class="dropdown-parent">
+    <a href="#">BOUQUETS</a>
+    <ul class="dropdown">
+      <li><a href="ourbouquets.html">OUR BOUQUETS</a></li>
+      <li><a href="yourbouquets.html">YOUR BOUQUETS</a></li>
+    </ul>
+  </li>
+
+  <li><a href="cart.html">CART</a></li>
+
+  <li class="dropdown-parent">
+    <a href="aboutus.html">ABOUT US</a>
+    <ul class="dropdown">
+      <li><a href="contact.html">CONTACT US</a></li>
+      <li><a href="reviews.html">REVIEWS</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+  <!-- CONTENT -->
+  <div class="container">
+    <h1>Our Bouquets</h1>
+    <p class="subtitle">Explore our curated selection of bouquets :)</p>
+    <hr>
+
+    <div class="bouquet-grid">
+      <div class="bouquet-card">
+        <img src="learnmore/goodmorning.jpg" alt="bouquet" class="bouquet-img">
+        <h4 class="bouquet-name">Good Morning Sunshines✨🌻</h4>
+        <div class="bouquet-price">$50.00</div>
+        <div class="buttons">
+          <button class="add-btn">ADD TO CART</button>
+          <a href="learnmore/LearnMoreSunshine.html" class="learn-btn">LEARN MORE</a>
+        </div>
+      </div>
+
+      <div class="bouquet-card">
+        <img src="learnmore/chrysanthemom.jpg" alt="bouquet" class="bouquet-img">
+        <h4 class="bouquet-name">ChrysantheMOM💐🤰</h4>
+        <div class="bouquet-price">$50.00</div>
+        <div class="buttons">
+          <button class="add-btn">ADD TO CART</button>
+          <a href="learnmore/LearnMoreMOM.html" class="learn-btn">LEARN MORE</a>
+        </div>
+      </div>
+
+        <div class="bouquet-card">
+        <img src="learnmore/aprilshowers.jpg" alt="bouquet" class="bouquet-img">
+        <h4 class="bouquet-name">April showers bring YOU flowers🌷🫵</h4>
+        <div class="bouquet-price">$50.00</div>
+        <div class="buttons">
+          <button class="add-btn">ADD TO CART</button>
+          <a href="learnmore/LearnMoreApril.html" class="learn-btn">LEARN MORE</a>
+        </div>
+      </div>
+
+            <div class="bouquet-card">
+        <img src="learnmore/loveyou.jpg" alt="bouquet" class="bouquet-img">
+        <h4 class="bouquet-name">Love you a lily too much🪻💝</h4>
+        <div class="bouquet-price">$50.00</div>
+        <div class="buttons">
+          <button class="add-btn">ADD TO CART</button>
+          <a href="learnmore/LearnMoreLove.html" class="learn-btn">LEARN MORE</a>
+        </div>
+      </div>
+
+          <div class="bouquet-card">
+        <img src="learnmore/sugarbutterflowers.jpg" alt="bouquet" class="bouquet-img">
+        <h4 class="bouquet-name">Sugar, butter, flowers🧈🌷</h4>
+        <div class="bouquet-price">$50.00</div>
+        <div class="buttons">
+          <button class="add-btn">ADD TO CART</button>
+        <a href="learnmore/LearnMoreSugar.html" class="learn-btn">LEARN MORE</a>        </div>
+      </div>
+
+      <div class="bouquet-card">
+        <img src="learnmore/holdtheroses.jpg" alt="bouquet" class="bouquet-img">
+        <h4 class="bouquet-name">Stop & hold the roses🌹🤲</h4>
+        <div class="bouquet-price">$50.00</div>
+        <div class="buttons">
+          <button class="add-btn">ADD TO CART</button>
+          <a href="learnmore/LearnMoreRoses.html" class="learn-btn">LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIZE SELECT POPUP -->
+  <div id="size-popup" class="popup hidden">
+    <div class="popup-content">
+      <h3>Select a size</h3>
+      <div class="popup-buttons">
+        <button data-size="Small" data-price="50">Small – $50</button>
+        <button data-size="Medium" data-price="100">Medium – $100</button>
+        <button data-size="Large" data-price="150">Large – $150</button>
+      </div>
+      <button id="popup-cancel">Cancel</button>
+    </div>
+  </div>
+
+<footer>
+  <p>Florrangements®</p>
+  <div class="footer-links">
+    <a href="aboutus.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
