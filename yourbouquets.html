@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Bouquets</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+ <!-- NAV BAR -->
+<ul id="nav">
+  <li class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="logo" style="width:90px; border-radius:50%;">
+    </a>
+  </li>
+
+  <li class="dropdown-parent">
+    <a href="#">BOUQUETS</a>
+    <ul class="dropdown">
+      <li><a href="ourbouquets.html">OUR BOUQUETS</a></li>
+      <li><a href="yourbouquets.html">YOUR BOUQUETS</a></li>
+    </ul>
+  </li>
+
+  <li><a href="cart.html">CART</a></li>
+
+  <li class="dropdown-parent">
+    <a href="aboutus.html">ABOUT US</a>
+    <ul class="dropdown">
+      <li><a href="contact.html">CONTACT US</a></li>
+      <li><a href="reviews.html">REVIEWS</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+  <!-- CONTENT -->
+  <div class="container">
+    <h1>Your Bouquets</h1>
+    <p class="subtitle">Your vision is our mission! Customize bouquets from our assortment of locally grown, environmentally friendly flowers.</p>
+    <hr>
+
+    <!-- STEP 1: SIZE -->
+    <div class="step" id="step-size">
+      <h3>STEP 1: Select your size</h3>
+      <div class="selection-grid">
+        <div class="selection-card" data-size="Small" data-price="50">
+          <div class="img-box">
+            <img src="images/smallbouquet.jpg" 
+              style="width:100%; height:180px; border-radius:10px; object-fit:cover;">
+          </div>
+          <h4>Small</h4>
+          <p>$50.00</p>
+        </div>
+        <div class="selection-card" data-size="Medium" data-price="100">
+          <div class="img-box">
+            <img src="images/mediumbouquet.jpg" 
+              style="width:100%; height:180px; border-radius:10px; object-fit:cover;">
+          </div>
+          <h4>Medium</h4>
+          <p>$100.00</p>
+        </div>
+        <div class="selection-card" data-size="Large" data-price="150">
+          <div class="img-box">
+            <img src="images/largebouquet.jpg" 
+              style="width:100%; height:180px; border-radius:10px; object-fit:cover;">
+          </div>
+          <h4>Large</h4>
+          <p>$150.00</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- STEP 2: FLOWERS -->
+    <div class="step" id="step-flowers">
+      <h3>STEP 2: Select your flowers</h3>
+      <p>Please select up to three flowers to be incorporated within your bouquet.</p>
+
+      <div class="selection-grid">
+        <div class="selection-card" data-flower="Tulips">
+          <div class="img-box">
+            <img src="images/tulips.jpg" 
+              style="width:100%; height:180px; border-radius:10px; object-fit:cover;">
+          </div>
+          <h4>Tulips</h4>
+          <p>plucked from 🌷 Mari Farm, MA</p>
+        </div>
+        <div class="selection-card" data-flower="Roses">
+          <div class="img-box">
+            <img src="images/roses.jpg" 
+              style="width:100%; height:180px; border-radius:10px; object-fit:cover;">
+          </div>
+          <h4>Roses</h4>
+          <p>plucked from 🌷 Dhruvii Farm, MA</p>
+        </div>
+        <div class="selection-card" data-flower="Carnations">
+          <div class="img-box">
+            <img src="images/carnations.jpg" 
+              style="width:100%; height:180px; border-radius:10px; object-fit:cover;">
+          </div>
+          <h4>Carnations</h4>
+          <p>plucked from 🌷 Tomaru Farm, MA</p>
+        </div>
+        <div class="selection-card" data-flower="Peonies">
+          <div class="img-box">
+            <img src="images/peonies.jpg" 
+              style="width:100%; height:180px; border-radius:10px; object-fit:cover;">
+          </div>
+          <h4>Peonies</h4>
+          <p>plucked from 🌷 Mehta Farm, MA</p>
+        </div>
+        <div class="selection-card" data-flower="Lilies">
+          <div class="img-box">
+            <img src="images/lilies.jpg" 
+              style="width:100%; height:180px; border-radius:10px; object-fit:cover;">
+          </div>
+          <h4>Lilies</h4>
+          <p>plucked from 🌷 Marisa Farm, MA</p>
+        </div>
+        <div class="selection-card" data-flower="Daisies">
+          <div class="img-box">
+            <img src="images/daisy.jpg" 
+              style="width:100%; height:180px; border-radius:10px; object-fit:cover;">
+          </div>
+          <h4>Daisies</h4>
+          <p>plucked from 🌷 Dhruvi Farm, MA</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- STEP 3: NOTE -->
+    <div class="step" id="step-note">
+      <h3>STEP 3: Add an optional note</h3>
+      <textarea id="bouquet-note" placeholder="Write a message for your bouquet (optional)" rows="4" style="width:100%; padding:10px; font-family:'DM Sans', sans-serif;"></textarea>
+    </div>
+
+    <button id="create-bouquet-btn" class="add-btn" style="margin-top: 30px;">ADD CUSTOM BOUQUET TO CART</button>
+  </div>
+<footer>
+  <p>Florrangements®</p>
+  <div class="footer-links">
+    <a href="aboutus.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</footer>
+
+</body>
+</html>
