@@ -307,3 +307,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// checkout button alert, and then clear the cart
+document.addEventListener("DOMContentLoaded", () => {
+  const checkoutBtn = document.querySelector(".checkout-btn");
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener("click", () => {
+      alert("Your order has been confirmed! 💗🌷😊");
+      clearCart(); 
+      renderCart();
+    });
+  }
+});
